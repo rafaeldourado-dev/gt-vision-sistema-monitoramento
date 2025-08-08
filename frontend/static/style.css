@@ -1,0 +1,106 @@
+/* frontend/static/style.css */
+
+/* Reset básico e fontes */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0d1117; /* Um azul bem escuro, quase preto */
+    color: #c9d1d9;
+    margin: 0;
+    padding: 2em;
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
+}
+
+/* Títulos */
+.header {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.header h1 {
+    color: #58a6ff; /* Azul claro para o título principal */
+    font-weight: 600;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header h2 {
+    color: #8b949e; /* Cinza para o subtítulo */
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+/* Container dos pop-ups de alerta */
+.alert-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column-reverse; /* Alertas novos aparecem em cima dos antigos */
+    gap: 10px;
+    z-index: 1000;
+}
+
+/* Estilo do pop-up individual */
+.alert-popup {
+    width: 350px;
+    background-color: rgba(22, 27, 34, 0.9);
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.alert-popup.fade-out {
+    animation: fadeOut 0.5s ease-in forwards;
+}
+
+.alert-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #f0f6fc;
+}
+
+.alert-icon {
+    font-size: 1.5em;
+}
+
+.alert-body {
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #8b949e;
+}
+
+.alert-timestamp {
+    margin-top: 12px;
+    font-size: 0.8em;
+    color: #58a6ff;
+    text-align: right;
+}
+
+/* Animações de Fade In/Out */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}

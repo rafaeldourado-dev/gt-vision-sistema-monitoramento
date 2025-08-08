@@ -1,0 +1,25 @@
+# Arquivos de segredos e configuração local
+.env
+db.json
+
+# Ambiente virtual do Python
+venv/
+.venv/
+
+# Arquivos de cache e compilados do Python
+__pycache__/
+*.pyc
+
+# Logs e mídia gerada pelo sistema
+/backend/logs/
+/media/
+
+# Dependências do Node.js
+/whatsapp-bot/node_modules/
+/whatsapp-bot/.wwebjs_auth/
+
+# Caches de editores e ferramentas
+.vscode/
+.idea/
+.pytest_cache/
+.wwebjs_cache/

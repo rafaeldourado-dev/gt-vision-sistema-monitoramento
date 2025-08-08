@@ -1,0 +1,45 @@
+# Core backend
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Frontend
+jinja2==3.1.4
+
+# OpenCV e imagem
+opencv-python==4.10.0.82
+numpy==1.26.4
+imutils==0.5.4
+Pillow==10.3.0
+
+# OCR
+pytesseract==0.3.10
+easyocr==1.7.1
+torch==2.3.0
+torchvision==0.18.0 
+ 
+# Streaming
+imageio==2.34.0
+imageio-ffmpeg==0.4.9
+av==10.0.0  # Substituto de pyav compatível com Python 3.10
+
+# Logging e utils
+loguru==0.7.2
+python-dotenv==1.0.1
+
+# Banco de dados
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9
+
+# Validação e config
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# Requests
+requests==2.31.0
+
+# Outros utilitários
+scikit-image==0.23.2
+scipy==1.13.1
+
+pytest==8.2.2
+ultralytics==8.2.33
